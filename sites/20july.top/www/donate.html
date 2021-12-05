@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<title> About</title>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<div id="navigation">
+	</div>			
+	<script>
+		$(document).ready(function(){
+			$.get("sidebar.html", function(data){
+			$("#navigation").html(data);
+			});
+		});
+	</script>
+	<div class="main-wrapper">
+BTC: 1H6rup9i8Y7ccDNmKC5JuH5QFQHwpghvZD
+
+
+
+	</div>
+</body>

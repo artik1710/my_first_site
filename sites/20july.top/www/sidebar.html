@@ -1,0 +1,73 @@
+<div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+		    <h1 class="name"><a href="index.html">20 Июля</a></h1>
+                <h3 class="tagline">Добро пожаловать в PEACH Клубъ-абиссъ</h3>
+
+            </div>
+
+
+
+    <div class="auth-form">
+            <p id = "logtext"> You are not logged</p>
+            <div class = "unlogged" id="unlg">
+                        <form action="auth.php" method="post">
+                        <p>login:</p>
+                        <p><input type="text" name="login" /></p>
+                        <p>password:</p>
+                        <p><input type="password" name="password" /></p>
+                        <p><input type="submit" value ="log in"/></p>
+                        </form>
+                        <form action="reg.php">
+                        <input type="submit" value="Sign up" />
+                        </form>
+                        </div>
+
+                        <form action="auth.php" id="log" method="post">
+                        <input type="hidden" name="quit" value="true">
+                        <input type="submit" value="Log out"/>
+
+                        </form>
+
+                        <button type="button" onclick = "alert('why?')";>
+                        </button>
+                        </div>
+
+
+
+                <div class="side-menu">
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="projects.html">Our projects</a></p>
+                <p><a href="donate.html">Please donate</a></p>
+                <p><a href="contacts.html">Contacts</a></p>
+                <p><a href="discuss.html">Discuss</a></p>
+
+                </div>
+
+
+        </div>
+        <script>
+
+
+                var dc = decodeURIComponent(document.cookie);
+                var ca = dc.split(/[;= ]+/);
+                //document.cookie = 'key=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=20july.top;';
+                document.getElementById("log").style.display = "none";
+                for(var i = 0; i<ca.length; i++)
+                {
+        //      alert(ca[i+1]);
+                if ((ca[i] == "key") && (window.ca[i+1]))
+                {
+        //      alert(ca[i].localeCompare('key') + ca[i]);
+             //   alert(ca[i+1]);
+                document.getElementById("log").style.display = "block";
+                document.getElementById("unlg").style.display = "none";
+                document.getElementById('logtext').innerHTML = "Welcome back, "+ ca[i+3];
+                        break;
+                }
+                }
+
+
+            </script>
+
+

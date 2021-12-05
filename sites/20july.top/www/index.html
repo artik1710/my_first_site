@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+<link rel="icon" href="/assets/siteicon.png">
+    <title>20 july</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+</head> 
+
+<body>
+<div class="bgd"></div>	
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+		    <a href="index.html"><h1 class="name">20 Июля</h1></a>
+                <h3 class="tagline">Добро пожаловать в PEACH Клубъ-абиссъ</h3>
+
+	    </div>
+            
+            
+	   
+    <div class="auth-form">
+	    <p id = "logtext"> You are not logged</p>
+	    <div class = "unlogged" id="unlg">
+			<form action="auth.php" method="post">
+			<p>login:</p>
+			<p><input type="text" name="login" /></p>
+			<p>password:</p> 
+			<p><input type="password" name="password" /></p>
+			<p><input type="submit" value ="log in"/></p>
+			</form>
+			<form action="reg.php">
+			<input type="submit" value="Sign up" />
+			</form>	
+	    		</div>
+
+			<form action="auth.php" id="log" method="post">
+			<input type="hidden" name="quit" value="true">
+			<input type="submit" value="Log out"/>
+			
+			</form>
+
+			<button type="button" onclick = "alert('why?')";>
+			</button>
+    			</div>
+	
+
+
+		<div class="side-menu">
+		<p><a href="about.html">About Us</a></p>
+		<p><a href="projects.html">Our projects</a></p>
+		<p><a href="donate.html">Please donate</a></p>
+		<p><a href="contacts.html">Contacts</a></p>
+		<p><a href="discuss.html">Discuss</a></p>
+		
+		</div>
+
+
+	</div>
+         <script>
+	
+
+                var dc = decodeURIComponent(document.cookie);
+                var ca = dc.split(/[;= ]+/);
+		//document.cookie = 'key=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=20july.top;';
+                document.getElementById("log").style.display = "none";
+		for(var i = 0; i<ca.length; i++)
+                {
+	//	alert(ca[i+1]);	
+                if ((ca[i] == "key") && (window.ca[i+1]))
+                {
+        //      alert(ca[i].localeCompare('key') + ca[i]);
+             //   alert(ca[i+1]);
+                document.getElementById("log").style.display = "block";
+		document.getElementById("unlg").style.display = "none";
+                document.getElementById('logtext').innerHTML = "Welcome back, "+ ca[i+3]; 
+			break;
+                }                
+		}
+
+
+            </script>
+
+
+
+
+
+			</div><!--//sidebar-wrapper-->
+        
+        <div class="main-wrapper">
+            
+         <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+	<h2> Новости  </h2>
+	<!-- THERE IS NEWS-->
+		<div class="news-feed">
+			hello there is news feed :)hello there is news feed :)hello there is news feed :)hello there is news feed :)hello there is news feed :)hello there is news feed :)hello there is news feed :)hello there is news feed :)
+
+
+
+
+		</div> <!--End of NEWS feed -->
+	</div>
+ 
+    <footer class="footer">
+        <div class="text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+              
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
+
+
